@@ -12,7 +12,7 @@ function App() {
   }
 
   const deleteShoppingList = (id) => {
-    setShoppingList(shoppingList.filter(item => item.id !== id))
+    setShoppingList(prevState => prevState.filter(item => item.id !== id))
   }
 
   return (
